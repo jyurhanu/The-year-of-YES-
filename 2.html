@@ -3,14 +3,56 @@
 <head>
 <title>The year of "YES" - Credit</title>
 <meta charset="utf=8">
+<style>
+a {
+ color:brown;
+ text-decoration: none;
+}
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    ol{
+      border-right:none;
+    }
+    h1 {
+    border-bottom:none;
+  }
+}
+</style>
 </head>
 <body>
   <h1><a href="index.html">The year of "YES"</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">앨범소개</a><br></li>
-    <li><a href="2.html">Credit</a><br></li>
+    <li><a href="2.html" style="color:blue;text-decoration:underline">Credit</a><br></li>
     <li><a href="3.html">가사</a><br></li>
   </ol>
+  <div id="article">
   <h2>Credit</h2>
   <p>
 <br>01. 올해 제일 잘한 일 [Title]
@@ -61,5 +103,7 @@
 편곡: J.Y. Park “The Asiansoul”, 이해솔</br>
 <br>트와이스가 올해 9월 발표한 일본 정규 1집 타이틀곡 'BDZ'의 한국어 버전. 트와이스의 프로듀서이자 JYP 수장인 ‘The Asiansoul’ 박진영이 제작한 곡으로 셔플 리듬의 웅장한 느낌을 주며 트와이스와 팬들이 교대로 후렴을 부르도록 작곡되었다. 'BDZ'는 '불도저'의 약자로 불도저처럼 꿈과 사랑을 향해 적극적으로 달려가겠다는 마음이 담겨있다. 'BDZ'는 지난 9월 오리콘 월간 앨범차트 정상에 오르며 현지서 뜨거운 사랑을 받았다.</br>
   </p>
+</div>
+</div>
 </body>
 </html>

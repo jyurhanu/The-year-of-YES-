@@ -3,14 +3,56 @@
 <head>
 <title>The year of "YES" - 앨범소개</title>
 <meta charset="utf=8">
+<style>
+a {
+ color:brown;
+ text-decoration: none;
+}
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    ol{
+      border-right:none;
+    }
+    h1 {
+    border-bottom:none;
+  }
+  }
+</style>
 </head>
 <body>
   <h1><a href="index.html">The year of "YES"</a></h1>
+  <div id="grid">
   <ol>
-    <li><a href="1.html">앨범소개</a><br></li>
+    <li><a href="1.html" style="color:blue;text-decoration:underline">앨범소개</a><br></li>
     <li><a href="2.html">Credit</a><br></li>
     <li><a href="3.html">가사</a><br></li>
   </ol>
+  <div id="article">
   <h2>앨범소개</h2>
   <p>
 <br>트와이스, 12월 12일 세 번째 스페셜 앨범 'The year of "YES"' 및 타이틀곡 '올해 제일 잘한 일' 발매</br>
@@ -27,5 +69,7 @@
 <br>트와이스는 앞서 올해 발매한 3장의 앨범으로 100만장에 달하는 판매고를 올렸고, 각 앨범 타이틀곡인 ''What is Love?', 'Dance The Night Away', 'YES or YES'는 각종 온라인 음원 실시간, 일간, 주간차트 및 가온차트 정상을 휩쓸었고, 나아가 음악방송 1위 트로피를 석권하며 'K팝 대표 걸그룹'의 위상을 입증했다.</br>
 <br>알찬 한 해를 보낸 트와이스가 선물 같은 앨범 'The year of "YES"'와 뜻깊은 타이틀곡 '올해 제일 잘한 일'을 선보이고 2018년 대미를 장식한다.</br>
   </p>
+</div>
+</div>
 </body>
 </html>
