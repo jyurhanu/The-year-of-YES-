@@ -4,9 +4,13 @@
 <title>The year of "YES" - 가사</title>
 <meta charset="utf=8">
 <link rel="stylesheet" href="style.css">
+<script src="color.js"></script>
 </head>
 <body>
   <h1><a href="index.html">The year of "YES"</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+nightDayHandler(this);
+  ">
   <div id="grid">
   <ol>
     <li><a href="1.html">앨범소개</a><br></li>
@@ -66,6 +70,18 @@ Yeah the best thing I ever did
 Ah ah ah ah
 The best thing I ever did</br>
   </p>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value ='day' ;
+   } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+   }
+  ">
 </div>
 </div>
 </body>
